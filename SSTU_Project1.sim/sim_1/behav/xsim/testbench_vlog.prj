@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../SSTU_lib/adders.v" \
+"../../../../SSTU_Project1.srcs/sources_1/new/wallace_tree_multiplier.v" \
+"../../../../SSTU_Project1.srcs/sim_1/new/wallace_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
